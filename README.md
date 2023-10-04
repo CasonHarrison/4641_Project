@@ -10,10 +10,14 @@ We will use Tensorflow as our primary library for creating our music generator. 
 
 # References
 Briot, JP., Pachet, F. Deep learning for music generation: challenges and directions. Neural Comput & Applic 32, 981–993 (2020). https://doi.org/10.1007/s00521-018-3813-6
+
 Hadjeres, G., & Nielsen, F. (2017). Interactive music generation with positional constraints using 
 anticipation-rnns. arXiv preprint arXiv:1709.06404.
+
 Bob L. Sturm, Oded Ben-Tal, Úna Monaghan, Nick Collins, Dorien Herremans, Elaine Chew, Gaëtan Hadjeres, Emmanuel Deruty & François Pachet (2019) Machine learning research that matters for music creation: A case study, Journal of New Music Research, 48:1, 36-55, DOI: 10.1080/09298215.2018.1515233 
+
 Donahue, C., Mao, H. H., &amp; McAuley, J. (2018). The NES Music Database: A Multi-Instrumental Dataset with Expressive Performance Attributes. https://doi.org/https://doi.org/10.48550/arXiv.1806.04278 
+
 Dong, H. W., Chen, K., McAuley, J., & Berg-Kirkpatrick, T. (2020). MusPy: A toolkit for symbolic music 	generation. arXiv preprint arXiv:2008.01951. https://arxiv.org/abs/2008.01951
  
 # Potential Results
