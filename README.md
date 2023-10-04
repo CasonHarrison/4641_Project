@@ -30,7 +30,7 @@ https://1drv.ms/x/s!Am9-lOMC68OKawyaCieqDdI-cNA
 # Contributions table
 | Name | Disha | Cason | Emily | William | Derek |
 | ---- | ----- | ----- | ----- | ------- | ----- |
-| Task completed | x | Create github pages, problem definition, references, powerpoint | x | Found Briot source, added information to introduction, Potential Results, Part of powerpoint | x |
+| Task completed | research for introduction, powerpoint, exploring datasets | Create github pages, problem definition, references, powerpoint | x | Found Briot source, added information to introduction, Potential Results, Part of powerpoint | x |
 
 # Checkpoint
 By midterm report:
