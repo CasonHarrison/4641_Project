@@ -35,7 +35,7 @@ https://1drv.ms/x/s!Am9-lOMC68OKawyaCieqDdI-cNA
 
 # Checkpoint
 By midterm report:
-At minimum, we aim to have a cleaned version of our dataset that includes 8-bit songs that are easily interpretable for our model. Tensorflow should be set up in our repository and the set of songs we have should be loaded in. Our goal also includes breaking each song into individual notes and “separating” each note into 3 different groups: step, duration, and pitch. At this point, all data-related needs should be handled with the only remaining task being setting up a model that can generate songs based on our song dataset. 
+At minimum, we aim to have a cleaned version of our [dataset](https://github.com/chrisdonahue/nesmdb) that includes 8-bit songs that are easily interpretable for our model. Tensorflow should be set up in our repository and the set of songs we have should be loaded in. Our goal also includes breaking each song into individual notes and “separating” each note into 3 different groups: step, duration, and pitch. At this point, all data-related needs should be handled with the only remaining task being setting up a model that can generate songs based on our song dataset. 
 If we are able to finalize our dataset and have remaining time, we’ll also aim to set up a prototype version of our model. It should be able to generate songs, but doing so at a high quality is not our goal.
 <br />
 By final report:
