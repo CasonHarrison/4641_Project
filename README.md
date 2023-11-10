@@ -28,13 +28,15 @@ Each of our dataset's features (pitch, step, duration) were skewed in a particul
 
 After generating our song, we plotted the distribution of notes shown below:
 
-![Alt text](generated.png)
-
-Since the nature of our project is qualitative (cannot evaluate how "good" a song is quantitatively), we judged the results based on how closely the generated song followed our dataset and how musically pleasing the song sounded. As seen in the histogram below, our generated music did follow the patterns of the features in our training dataset (pitch centered between 50-100, low step, low duration). However, we found there to be issues with the overall melody and musical appeal of the song.
-
 ![Alt text](generated_notes.png)
 
-For our final report, we plan to make adjustments to the architecture of our model and tune several parameters that influence the output of our song (temperature - controls for diversity in notes, # of generated notes, etc). The basis of our model centers around an LSTM layer which is effective for predicting future sequences and is responsible for the majority of our project. Since the only other layer is a dense layer (acting as our output layer), we aim to increase the size of our model by experimenting with adding other layers to modify both the input layers prior to the LSTM layer and the output layers coming out of the LSTM layer to see if the generated song would be significally impacted along with its musical appeal. We surmised that the low musical appeal in our current songs could be due to the overwhelmingly basic architecture of our deep learning model that features only an input LSTM layer, dense output layers, and no hidden layers.
+Since the nature of our project is qualitative (cannot evaluate how "good" a song is quantitatively), we judged the results based on how closely the generated song followed our dataset and how musically pleasing the song sounded. As seen in the histogram below, our generated music only followed the pitch feature in our dataset (centered roughly between 50-100) but the step and duration heavily deviated from the patterns exhibited in the training dataset. The step and duration seemed to be solely clustered around one point (step=0.14,duration~=0.12), which did not align with our training dataset's pattern of being more dispersed. We also found there to be issues with the overall melody and musical appeal of the song.
+
+![Alt text](generated.png)
+
+For our final report, we plan to make adjustments to the architecture of our model and tune several parameters that influence the output of our song (temperature - controls for diversity in notes, # of generated notes, etc). The basis of our model centers around an LSTM layer which is effective for predicting future sequences and is responsible for the majority of our project. Since the only other layer is a dense layer (acting as our output layer), we aim to increase the size of our model by experimenting with adding other layers to modify both the input layers prior to the LSTM layer and the output layers coming out of the LSTM layer to see if the generated song would be significally impacted along with its musical appeal. We surmised that the low musical appeal in our current songs could be due to the overwhelmingly basic architecture of our deep learning model that features only an input LSTM layer, dense output layers, and no hidden layers. 
+
+We also hope that adding more hidden layers and tuning the hyperparameters of our model will create more variety in the step and duration of our generated song. The lack of variety in step and duration leads us to believe that this may have been influenced by the basic architecture of our model as well.
 
 # Timeline
 Below is a link to our Gantt chart which organizes our projects timeline
