@@ -41,7 +41,7 @@ We also hope that adding more hidden layers and tuning the hyperparameters of ou
 
 # Timeline
 Below is a link to our Gantt chart which organizes our projects timeline
-https://1drv.ms/x/s!Am9-lOMC68OKawyaCieqDdI-cNA
+https://1drv.ms/x/s!AruP9H8mQDWubexK-SrZNCJPWfw?e=P1U0k2
 
 # Contributions table
 | Name | Disha | Cason | Emily | William | Derek |
