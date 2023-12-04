@@ -65,7 +65,7 @@ Previously, we just took the first 100 songs in the music dataset that were at l
 
 We also tried using a different song to generate a song. For the first generated song, we used *The Battle of Midway*. For the second generated song, we used *Ghostbusters*. Changing the song used did produce a different song, with slightly different pitch, step, and duration distributions, but it still sounded quite similar to the first generated song, likely because the training model was the same for both of the songs. The chi-squared values were also similar for the 2 songs.
 
-Finally, we used a different instrument to generate the song. The original generated song used the Acoustic Grand Piano, and we then decided to generate a song using the Electric Guitar (jazz). The result was that the chi-squared distance was exactly identical to that of the Acoustic Piano song, but the distributions for pitch, step, and duration were somewhat different. This may be because different instruments have different ranges of notes that they are able to play, so the songs sounded slightly different.
+Finally, we used a different instrument to generate the song. The original generated song used the Acoustic Grand Piano, and we then decided to generate a song using the Electric Guitar (jazz). The result was that the chi-squared distance was exactly identical to that of the Acoustic Piano song, and so were the distributions for pitch, step, and duration , but the songs did sometimes sound slightly different. This may be because different instruments have different ranges of notes that they are able to play.
 
 
 
