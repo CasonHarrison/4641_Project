@@ -23,6 +23,12 @@ To generate music, we fed our model a sequence of notes pulled from a random MID
 
 # Results and Discussion
 
+### Adjusting Learning Rate
+
+### Adjusting Temperature
+
+### Adding Layers
+
 Each of our dataset's features (pitch, step, duration) were skewed in a particular direction. Duration tended to be skewed towards the left, which was understandable since generally speaking, most musical notes are brief. Step (distance between notes) was also skewed towards the left, which also followed expectations since music notes tend to "stick together" or incrementally change (large steps do exist, but at a lower rate as shown in our graph). Pitch had a tendency to be grouped in the middle where the pitch was not too high nor too low (50-100). This trend also meets expectations since most songs do not tend to have drastically high or low pitch notes. We compiled the pitch, step, and duration of every song in our training dataset into one histogram shown below.
 
 ![Alt text](dataset.png)
@@ -50,6 +56,18 @@ The chi squared distance for our pitch feature was significantly larger than the
 For our final report, we plan to make adjustments to the architecture of our model and tune several parameters that influence the output of our song (temperature, # of generated notes, etc). The basis of our model centers around an LSTM layer which is effective for predicting future sequences and is responsible for the majority of our project. Since the only other layer is a dense layer (acting as our output layer), we aim to increase the size of our model by experimenting with adding other layers to modify both the input layers prior to the LSTM layer and the output layers coming out of the LSTM layer to see if the generated song would be significally impacted along with its musical appeal. We surmised that the low musical appeal in our current songs could be due to the overwhelmingly basic architecture of our deep learning model that features only an input LSTM layer, dense output layers, and no hidden layers. 
 
 We also hope that adding more hidden layers and tuning the hyperparameters of our model will create more variety in the step and duration of our generated song. The lack of variety in step and duration leads us to believe that this may have been influenced by the basic architecture of our model as well.
+
+### Other Results
+
+Some of the other changes we made were changing our training set to take 100 random songs instead of the same 100 songs each time, using a different song file to generate the song, and use a different instrument to generate the song.
+
+Previously, we just took the first 100 songs in the music dataset that were at least 30 seconds in length to be a part of our training set. Because the dataset was ordered alphabetically, there were many songs that were very similar to each other; for example, there were 11 songs in the dataset that corresponded to *After Burner*. By taking 100 random songs from the dataset instead, we were able to come up with a training set that was more spread out with a large variety of songs. This made our songs sound much more like a normal song rather than scattered notes, and it greatly lowered our values for chi-squared distance.
+
+We also tried using a different song to generate a song. For the first generated song, we used *The Battle of Midway*. For the second generated song, we used *Ghostbusters*. Changing the song used did produce a different song, with slightly different pitch, step, and duration distributions, but it still sounded quite similar to the first generated song, likely because the training model was the same for both of the songs. The chi-squared values were also similar for the 2 songs.
+
+Finally, we used a different instrument to generate the song. The original generated song used the Acoustic Grand Piano, and we then decided to generate a song using the Electric Guitar (jazz). The result was that the chi-squared distance was exactly identical to that of the Acoustic Piano song, but the distributions for pitch, step, and duration were somewhat different. This may be because different instruments have different ranges of notes that they are able to play, so the songs sounded slightly different.
+
+
 
 # Timeline
 Below is a link to our Gantt chart which organizes our projects timeline
