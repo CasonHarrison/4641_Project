@@ -78,9 +78,22 @@ Some of the other changes we made were changing our training set to take 100 ran
 
 Previously, we just took the first 100 songs in the music dataset that were at least 30 seconds in length to be a part of our training set. Because the dataset was ordered alphabetically, there were many songs that were very similar to each other; for example, there were 11 songs in the dataset that corresponded to *After Burner*. By taking 100 random songs from the dataset instead, we were able to come up with a training set that was more spread out with a large variety of songs. This made our songs sound much more like a normal song rather than scattered notes, and it greatly lowered our values for chi-squared distance.
 
+
+https://github.com/CasonHarrison/casonharrison.github.io/assets/144857160/7971fc38-112b-4805-a061-bfa8d20b3d57
+
+
+
 We also tried using a different song to generate a song. For the first generated song, we used *The Battle of Midway*. For the second generated song, we used *Ghostbusters*. Changing the song used did produce a different song, with slightly different pitch, step, and duration distributions, but it still sounded quite similar to the first generated song, likely because the training model was the same for both of the songs. The chi-squared values were also similar for the 2 songs.
 
-Finally, we used a different instrument to generate the song. The original generated song used the Acoustic Grand Piano, and we then decided to generate a song using the Electric Guitar (jazz). The result was that the chi-squared distance was exactly identical to that of the Acoustic Piano song, and so were the distributions for pitch, step, and duration , but the songs did sometimes sound slightly different. This may be because different instruments have different ranges of notes that they are able to play.
+
+https://github.com/CasonHarrison/casonharrison.github.io/assets/144857160/3c94167f-6f7b-4767-859e-8d8073447e91
+
+
+Finally, we used a different instrument to generate the song. The original generated song (the one using *Ghostbusters*) used the Acoustic Grand Piano as its instrument, and we then decided to generate the same song using the Electric Guitar (jazz). The result was that the chi-squared distance was exactly identical to that of the Acoustic Piano song, and so were the distributions for pitch, step, and duration , but the songs did sometimes sound slightly different. This may be because different instruments have different ranges of notes that they are able to play.
+
+
+https://github.com/CasonHarrison/casonharrison.github.io/assets/144857160/07b486f4-02df-4230-bb70-2b6dccf9876c
+
 
 # Next Steps
 Based on our results, we noticed that adding additional layers and modifying the way we handle our data (to select random songs from our dataset instead of the same 100) seemed to have the greatest impact on the statistical and melodical quality of our songs. The problem presented with our 'additional dense layer model' was seemingly resolved by the introduction of randomness in the sampling of our songs. By doing so, we allow for greater variance in the notes of our songs (provided by the addition of an extra dense layer) and a closer replication of the base song by the generated song.
