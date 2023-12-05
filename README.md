@@ -136,10 +136,10 @@ Finally, we used a different instrument to generate the song. The original gener
 https://github.com/CasonHarrison/casonharrison.github.io/assets/144857160/07b486f4-02df-4230-bb70-2b6dccf9876c
 
 
-# Next Steps
+# Conclusion
 Based on our results, we noticed that adding additional layers and modifying the way we handle our data (to select random songs from our dataset instead of the same 100) seemed to have the greatest impact on the statistical and melodical quality of our songs. The problem presented with our 'additional dense layer model' was seemingly resolved by the introduction of randomness in the sampling of our songs. By doing so, we allow for greater variance in the notes of our songs (provided by the addition of an extra dense layer) and a closer replication of the base song by the generated song.
 
-With this information, we plan to continue to optimize our model and its hyperparameters. While the addition of only a single layer was able to provide significant results, we are interested in seeing if the introduction of even more layers creates even better songs. We also used ReLu as our activation functions in the newly added layer so we also plan to experiment with using different activation functions.
+With this information, we may continue to optimize our model and its hyperparameters. While the addition of only a single layer was able to provide significant results, we are interested in seeing if the introduction of even more layers creates even better songs. We also used ReLu as our activation functions in the newly added layer, so we could experiment with using different activation functions.
 
 # Timeline
 Below is a link to our Gantt chart which organizes our projects timeline
