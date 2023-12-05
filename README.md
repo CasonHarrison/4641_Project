@@ -55,7 +55,6 @@ We can conclude that the first iteration of our model does follow our training d
 
 ## Different models and hyperparameter tuning
 
-### Adjusting Learning Rate
 
 ### Adjusting Temperature
 
@@ -69,6 +68,19 @@ The histograms produced by songs with the aforementioned architecture feature a 
 While the histograms seemed to be more desirable on inspection, we noticed that the chi squared values produced by these songs were drastically off, as shown below: 
 
 ![Alt text](chi_squared_extra_layer.png)
+
+
+### Adjusting Learning Rate
+Additionally, we trained a new model with an increased learning rate of .01, increased from .005, on the extra dense layer architecture. The generated song maintained roughly similar distributions of step, pitch, and duration compared to the lower learning rate test. 
+
+![Alt text](lr_histogram.png)
+
+Interestingly, the resulting chi squared values were much lower than the previous test. 
+
+![Alt text](lr_chisq.png)
+
+Unfortunately, the generated songs from this model were not very pleasant or subjectively "musical". Even worse than some of the previous tests.
+
 
 In our next steps section, we talk about our next goals in handling the results for this specific model.
 
