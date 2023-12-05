@@ -61,15 +61,27 @@ The first hyperparameter we attempted to adjust was the temperature value. In ou
 To visualize this, here is an example of using our original base temperature of 2 
 ![Alt text](temp2audioOutput.png)
 ![Alt text](output1_piano_roll.png)
+
+
 https://github.com/CasonHarrison/casonharrison.github.io/assets/122836195/5418da73-d63a-4b38-a02d-d246fa75c59b
+
+
 Then, here is with a much higher temperature of 10 (much higher than needed but used to showcase the effect of increasing temperature)
 ![Alt text](temp10Output.png)
 ![Alt text](temp10roll.png)
+
+
 https://github.com/CasonHarrison/casonharrison.github.io/assets/122836195/9e374a89-1d0a-499f-a629-33ae7bc4d554
+
+
 As you can see, with a low temperature there is very little to no variance/low entropy leading to a very monotone, boring song. On the flip side, a higher temperature with high variance/entropy can lead to an "overly creative" song with too much variation. Thus, this is a great example of the importance of hyperparameter tuning as both of these results are less than desirable. So after some tuning, we found a temperature of 5 to be the sweet spot for our model, here is an example of a song generated with a temperature of 5
 ![Alt text](temp5Output.png)
 ![Alt text](temp5roll.png)
+
+
 https://github.com/CasonHarrison/casonharrison.github.io/assets/122836195/5cccc6cf-23c5-4599-a50d-3ab6ea30a3d4
+
+
 As you can see, this temperature value creates a good balance of a consistent melody, along with some random variation to add some creativity. 
 
 ### Adding Layers
